@@ -27,11 +27,12 @@
     <script>
         setTimeout((e)=>{
             const texture = new window.THREE.TextureLoader().load('img/wall.jpg');
-            const material = new THREE.MeshBasicMaterial({map:texture});
-            const box = document.querySelector("#cubrick")
-            let mesh = box.getObject3D('mesh')
+            const material_tex = new THREE.MeshBasicMaterial({map:texture});
+            const box = document.querySelector("#cubrick");
+            let mesh = box.getObject3D('mesh');
+            console.log(mesh)
             mesh.material = material_tex;
-        }, 5000);
+        }, 3000);
     </script>
 </body>
 
